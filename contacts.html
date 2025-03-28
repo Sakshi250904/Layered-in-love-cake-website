@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>LayeredinLove Cake Website</title>
+    <!-- Styling -->
+    <meta name="theme-color" content="#F2718E"> 
+    <link rel="apple-touch-icon" href="img/head/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/head/favicon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <nav class="nav">
+            <div class="menu-toggle">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+            </div>
+            <!--<a href="index.html" class="logo"><img src="img/tumblr_nihox67kR31qf2s7fo1_1280.webp" alt=""></a>-->
+            <!--Nav Links-->
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link ">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="shop.php" class="nav-link">Shop</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="" class="nav-link">Reservations</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About us</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="" class="nav-link active">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <button class="loginbtn1 " onclick="document.getElementById('login-form').style.display='block'">Login</button>
+              </li>
+            </ul>
+            <div> <li class="nav-item">
+               <a href="cart.php" class="nav-link info-header__open"></a>
+           </li>
+           </div>
+            <!--Nav Links-->
+          </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+          <div class="form-box">
+            <div class = "login">
+            <div class='button1-box'>
+              <div id='btn1'></div>
+              <button type='button1'onclick='login()' class='toggle1-btn1'>Log In</button>
+              <button type='button1'onclick='register()'class='toggle1-btn1'>Register</button>
+            </div>
+            <form id='login' class='input-group-login'>
+              <input type='text'class='input-field'placeholder='Email Id' required >
+          <input type='password'class='input-field'placeholder='Enter Password' required>
+          <input type='checkbox'class='check-box'><span style="color:#777; font-size:12px; bottom:75px; position:absolute;">Remember Password</span>
+          <button type='submit'class='submit-btn1'>Log in</button>
+         </form>
+        </div>
+        <div class = "register">
+         <form id='register' class='input-group-register'>
+           <input type='text'class='input-field'placeholder='Full Name' required>
+           <input type='email'class='input-field'placeholder='Email Id' required>
+           <input type='password'class='input-field'placeholder='Enter Password' required>
+           <input type='password'class='input-field'placeholder='Confirm Password'  required>
+           <input type='checkbox'class='check-box'><span style="color:#777; font-size:12px; bottom:75px; position:absolute;">I agree to the terms and conditions</span>
+              <button type='submit'class='submit-btn1'>Register</button>
+           </form>
+          </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__contacts contacts">
+           <div class="contacts__container _container">
+            <div class="contacts__breadcumbs breadcumbs-block">
+               <ul class="breadcumbs-block__breadcumbs breadcumbs">
+                  <li><a href="index.html">Home</a></li>
+                  <li><span href="#">Contacts</span></li>
+               </ul>
+            </div>
+            <h2 class="contacts__title">Contacts</h2>
+            <div class="contacts__body">
+               <div class="contacts__info info-contacts">
+                  <div class="info-contacts__column">
+                     <div class="info-contacts__item info-item">
+                        <div class="info-item__img">
+                           <img src="img/page-contacts/location.png" alt="location">
+                        </div>
+                        <div class="info-item__text">
+                           Mumbai <br> 4000059
+                        </div>
+                     </div>
+                  </div>
+                  <div class="info-contacts__column">
+                     <div class="info-contacts__item info-item">
+                        <div class="info-item__img">
+                           <img src="img/page-contacts/email.png" alt="location">
+                        </div>
+                        <div class="info-item__text">
+                           <a href="mailto:maricake@gmail.com">layeredinlove@gmail.com</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="info-contacts__column">
+                     <div class="info-contacts__item info-item">
+                        <div class="info-item__img">
+                           <img src="img/page-contacts/time.png" alt="location">
+                        </div>
+                        <div class="info-item__text">
+                          Every day 9:00am-12:00pm
+                        </div>
+                     </div>
+                  </div>
+                  <div class="info-contacts__column">
+                     <div class="info-contacts__item info-item">
+                        <div class="info-item__img">
+                           <img src="img/page-contacts/phone.png" alt="location">
+                        </div>
+                        <div class="info-item__text">
+                           <a href="tel:79268351558">0000 000 000</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+           </div>
+        </section>
+        <section class="page__contacts-questions contacts-questions">
+         <div class="contacts-questions__container _container">
+            <div class="contacts-questions__head">
+               <h2 class="contacts-questions__title">Still have questions?</h2>
+               <div class="contacts-questions__text">Send us your message and we will get back to you as soon as possible</div>
+            </div>
+            <div class="contacts-questions__body">
+               <form action="#" class="contacts-questions__form contacts-form">
+                  <div class="contacts-form__inputs">
+                     <div class="contacts-form__info">
+                        <input name="name" type="text" class="contacts-form__input" placeholder="Name" required>
+                        <input name="lastname" type="text" class="contacts-form__input" placeholder="Surname" required> 
+                        <input name="tel" type="tel" class="contacts-form__input" placeholder="Telephone" required>
+                     </div>
+                     <textarea name="message" type="text" class="contacts-form__input contacts-form__input_text" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                  </div>
+                  <div class="contacts-form__text">By clicking the "Send" button, you agree to the processing of personal data in accordance with the Privacy Policy.</div>
+                  <button class="contact-form__button btn" type="submit">Send</button>
+              </form>
+            </div>
+         </div>
+        </section>
+      </main>
+      <footer class="footer">
+				<div class="footer__container _container">
+				  <div class="footer__body">
+					 <div class="footer__info">
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<span>
+								   LayeredinLove
+								</span>
+							 </li>
+						  <li class="footer-list__item">
+							 <span>
+								<img src="img/footer/footer-location.svg" alt="footer-geo" class="footer-list__icon">
+								Mumbai, India
+							 </span>
+						  </li>
+						  <li class="footer-list__item">
+							<a href="tel:79268434319">
+							  <img src="img/footer/footer-phone.svg" alt="footer-phone" class="footer-list__icon">
+							  +0000-000-000
+							 </a>
+						  </li>
+						  <li class="footer-list__item">
+							 <a href="mailto:maricake@gmail.com">
+								<img src="img/footer/footer-email.svg" alt="footer-email" class="footer-list__icon">
+								LayeredinLove@gmail.com
+							 </a>
+						  </li>
+						</ul>
+						<div class="success__networks success-networks__footer">
+						  <button type="button" class="success-networks__inst"></button>
+						  <button type="button" class="success-networks__viber"></button>
+						  <button type="button" class="success-networks__tg"></button>
+					  </div>
+					 </div>
+					 <div class="footer__menu menu-footer">
+						<nav>
+						  <ul class="menu-footer__list">
+							 <li class="menu-footer__item">
+								<a href="shop.php" class="menu-footer__link">Desserts</a>
+								<ul class="mini-menu">
+								  <li class="mini-menu__link">
+									 <a href="shop.php">Cakes</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="shop.php">pastries</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="shop.php">Cupcakes</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="shop.html">Filling</a>
+								  </li>
+								</ul>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Account</a>
+								<ul class="mini-menu">
+								  <li class="mini-menu__link">
+									 <a href="#">Favourite</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="#">My Profile</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="cart.php">Cart</a>
+								  </li>
+								</ul>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Contacts</a>
+								<ul class="mini-menu">
+								  <li class="mini-menu__link">
+									 <a href="#">Instagram</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="#">Telegram</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="#">Whats App</a>
+								  </li>
+								</ul>
+							 </li>
+						  </ul>
+						</nav>
+					 </div>
+					 <div class="footer__scroll">            
+						<button type="button" id="top" class="scroll-up"></button>
+					 </div>
+				  </div>
+				</div>
+			</footer>
+    </div>
+    <script src="js/main.js"></script>
+   </body>
+</html>

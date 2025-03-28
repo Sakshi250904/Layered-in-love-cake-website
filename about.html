@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+		<title>LayeredinLove Cake Website</title>
+		<!-- Styling -->
+		<meta name="theme-color" content="#F2718E"> 
+		
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Tenor+Sans&display=swap" rel="stylesheet">
+		<!-- Main Css -->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main1.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--Header--><!--Header-->
+		<header>
+			<div class="container">
+				<nav class="nav">
+					<div class="menu-toggle">
+						<i class="fas fa-bars"></i>
+						<i class="fas fa-times"></i>
+					</div>
+					<!--<a href="index.html" class="logo"><img src="" alt=""></a>-->
+					<!--Nav Links-->
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="index.php" class="nav-link ">Home</a>
+						</li>
+	
+						<li class="nav-item">
+							<a href="shop.html" class="nav-link	">Shop</a>
+						</li>
+	
+						<li class="nav-item">
+							<a href="" class="nav-link">Reservations</a>
+						</li>
+	
+						<li class="nav-item">
+							<a href="about.html" class="nav-link active">About us</a>
+						</li>
+						
+						<li class="nav-item">
+							<a href="contacts.html" class="nav-link">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<button class="loginbtn1 " onclick="document.getElementById('login-form').style.display='block'">Login</button>
+						</li>
+					</ul>
+					<div> <li class="nav-item">
+						<a href="cart.php" class="nav-link info-header__open"></a>
+					</li>
+					</div>
+					<!--Nav Links-->
+				</nav>
+			</div>
+			<div id='login-form'class='login-page'>
+				<div class="form-box">
+					<div class = "login">
+					<div class='button1-box'>
+						<div id='btn1'></div>
+						<button type='button1'onclick='login()' class='toggle1-btn1'>Log In</button>
+						<button type='button1'onclick='register()'class='toggle1-btn1'>Register</button>
+					</div>
+					<form id='login' class='input-group-login'>
+						<input type='text'class='input-field'placeholder='Email Id' required >
+				<input type='password'class='input-field'placeholder='Enter Password' required>
+				<input type='checkbox'class='check-box'><span style="color:#777; font-size:12px; bottom:75px; position:absolute;">Remember Password</span>
+				<button type='submit'class='submit-btn1'>Log in</button>
+			 </form>
+			</div>
+			<div class = "register">
+			 <form id='register' class='input-group-register'>
+				 <input type='text'class='input-field'placeholder='Full Name' required>
+				 <input type='email'class='input-field'placeholder='Email Id' required>
+				 <input type='password'class='input-field'placeholder='Enter Password' required>
+				 <input type='password'class='input-field'placeholder='Confirm Password'  required>
+				 <input type='checkbox'class='check-box'><span style="color:#777; font-size:12px; bottom:75px; position:absolute;">I agree to the terms and conditions</span>
+						<button type='submit'class='submit-btn1'>Register</button>
+				 </form>
+			  </div>
+				</div>
+			</div>
+		</header>
+		<!--Header--><!--Header--> 
+			<main class="page">
+				<div class="page__about-brand about-brand">
+               <div class="about-brand__container _container">
+                  <div class="about-brand__breadcumbs breadcumbs-block">
+							<ul class="breadcumbs-block__breadcumbs breadcumbs">
+								<li><a href="#">Home</a></li>
+								<li><span href="#">About us</span></li>
+							</ul>
+						</div>
+                  <div class="about-brand__body">
+                     <h1 class="about-brand__title">Desserts made with love</h1>
+                     <div class="about-brand__text">Our small and cozy confectionery was created in 2010.We make confectionery products of any complexity exclusively from natural ingredients.</div>
+                     <div class="about-brand__buttons">
+                        <button type="button" class="about-brand__button btn" id="btn-open2">Request a call</button>
+                        <a href="./shop.html" class="about-brand__button btn-ghost">Product Catalog
+                           <img src="img/page-about/arrow-btn.svg" alt="">
+                        </a>
+                     </div>
+                   </div>
+               </div>
+            </div>
+            <section class="page__about-team about-team">
+               <div class="about-team__container _container">
+                  <h2 class="about-team__title">Why us?</h2>
+                  <div class="about-team__body">
+                     <div class="about-team__block">
+                        <div class="about-team__img">                          
+                           <img src="img/page-about/item.png" alt="item">
+                           <div class="about-team__img_border"></div>
+                        </div>
+                        <div class="about-team__info">
+                           <h3>Our Products</h3>
+                           <div class="about-team__text">
+							We do not skimp on good products in pursuit of cheapness, we do not "improve" our creations by adding preservatives, improvers, flavors, semi-finished products, powders and other chemicals.
+						   </div>
+                           <div class="about-team__text">
+							Despite the fact that the modern market is actively trying to force us to make a mess with the composition and recruit an inexpensive workforce, we successfully resist this onslaught in the face of fierce competition. 
+						   </div>
+                        </div>
+                     </div>
+                     <div class="about-team__block about-team__block_reverse">
+                        <div class="about-team__img">                          
+                           <img src="img/page-about/item2.png" alt="item">
+                           <div class="about-team__img_border about-team__img_border_reverse"></div>
+                        </div>
+                        <div class="about-team__info about-team__info__director">
+                           <h3>The Main Man in the Confectionery Shop</h3>
+                           <div class="about-team__text">
+							Of course, this is our brand chef, pastry chef.All desserts are invented and developed under her supervision. We don't steal recipes: our brand's wonder head is full of ideas for implementation.
+						   </div>
+                           <div class="about-team__text">
+							We can proudly say that we treat our children with our sweets without a twinge of conscience, because we know what it is made of, with what hands and in what conditions.
+						   </div>
+                        </div>
+                     </div>
+                     <div class="about-team__block">
+                        <div class="about-team__img">                          
+                           <img src="img/page-about/item3.png" alt="item">
+                           <div class="about-team__img_border"></div>
+                        </div>
+                        <div class="about-team__info about-team__info_work">
+                           <h3>Result-oriented work</h3>
+                           <div class="about-team__text">
+							We don't produce a mass-produced product that everyone likes and is inexpensive, but we do offer really delicious desserts!
+						   </div>
+                           <div class="about-team__text">
+							Our desserts are the product of inspiration and long hours of experimentation in search of an impressive result.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container _container">
+				  <div class="footer__body">
+					 <div class="footer__info">
+						<a href="index.html" class="footer-logo"></a>
+						<ul class="footer-list">
+						  <li class="footer-list__item">
+							 <span>
+								<img src="img/footer/footer-location.svg" alt="footer-geo" class="footer-list__icon">
+								Mumbai
+							 </span>
+						  </li>
+						  <li class="footer-list__item">
+							<a href="tel:79268434319">
+							  <img src="img/footer/footer-phone.svg" alt="footer-phone" class="footer-list__icon">
+							  +0000 000 000
+							 </a>
+						  </li>
+						  <li class="footer-list__item">
+							 <a href="mailto:maricake@gmail.com">
+								<img src="img/footer/footer-email.svg" alt="footer-email" class="footer-list__icon">
+								layeredinlove@gmail.com
+							 </a>
+						  </li>
+						</ul>
+						<div class="success__networks success-networks__footer">
+						  <button type="button" class="success-networks__inst"></button>
+						  <button type="button" class="success-networks__viber"></button>
+						  <button type="button" class="success-networks__tg"></button>
+					  </div>
+					 </div>
+					 <div class="footer__menu menu-footer">
+						<nav>
+						  <ul class="menu-footer__list">
+							 <li class="menu-footer__item">
+								<a href="shop.html" class="menu-footer__link">Desserts</a>
+								<ul class="mini-menu">
+								  <li class="mini-menu__link">
+									 <a href="shop.html">Cakes</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="shop.html">pastries</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="shop.html">Cupcakes</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="shop.html">Filling</a>
+								  </li>
+								</ul>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Account</a>
+								<ul class="mini-menu">
+								  <li class="mini-menu__link">
+									 <a href="#">Favourite</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="#">My Profile</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="cart.html">Cart</a>
+								  </li>
+								</ul>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Contacts</a>
+								<ul class="mini-menu">
+								  <li class="mini-menu__link">
+									 <a href="#">Instagram</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="#">Telegram</a>
+								  </li>
+								  <li class="mini-menu__link">
+									 <a href="#">Whats App</a>
+								  </li>
+								</ul>
+							 </li>
+						  </ul>
+						</nav>
+					 </div>
+					 <div class="footer__scroll">            
+						<button type="button" id="top" class="scroll-up"></button>
+					 </div>
+				  </div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

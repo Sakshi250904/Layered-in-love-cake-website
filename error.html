@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>LayeredinLove Cake Website</title>
+    <!--SEO-->
+    <meta name="description" content="Лучшие десерты в твоем городе">
+    <meta name="keywords" content="десерт, лучшие, панкейк">
+    <!-- OG Tags -->
+    <meta property="og:title" content="Mari Cake">
+    <meta property="og:description" content="Лучшие десерты в твоем городе">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="img/head/preview.png">
+    <meta property="og:site_name" content="Mari Cake">
+    <!-- Styling -->
+    <meta name="theme-color" content="#F2718E"> 
+    <link rel="apple-touch-icon" href="img/head/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/head/favicon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="myHeader">
+        <div class="header__container _container">
+          <div class="logo-block">
+            <div class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-gumb">
+              <nav>
+                <a href="./index.html" class="logo-gumb"></a>
+                  <ul class="menu">
+                      <li class="menu__item">
+                          <a href="./index.html" class="menu__link">Главная</a>
+                      </li>
+                      <li class="menu__item">
+                          <a href="./shop.php" class="menu__link">Десерты</a>
+                      </li>
+                      <li class="menu__item">
+                          <a href="./about.html" class="menu__link">О нас</a>
+                      </li>
+                      <li class="menu__item">
+                          <a href="./contacts.html" class="menu__link">Контакты</a>
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+            <a href="index.html" class="header__logo logo"></a>
+            <a href="index.html" class="mini-logo"></a>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="shop.php" class="menu__link">Десерты</a>
+              </li>
+              <li class="menu__item">
+                <a href="about.html" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div> <li class="nav-item">
+              <a href="cart.php" class="nav-link info-header__open"></a>
+          </li>
+          </div>
+          </nav>
+          <div class="header__info info-header">
+            <div class="info-header__phone">
+              <div class="modal-content">
+                <button type="button" id="btn-open" class="order"></button>
+                <div id="wrapper-modal">
+                    <div id="modal-overlay">
+                    </div>
+                    <div id="modal-window">
+                            <button type="button" id="btn-close"></button>
+                        <div class="window-content">
+                            <h3 class="window-content__title">Заказать звонок</h3>
+                            <form action="#" class="form-popup">
+                              <input name="name" type="text" class="form-popup__input" placeholder="Имя" required>
+                              <input name="email" type="email" class="form-popup__input " placeholder="E-mail" required> 
+                              <input name="tel" type="tel" class="form-popup__input" placeholder="Телефон" required>
+                              <button type="submit" class="form-popup__button btn">Заказать</button>
+                            </form>
+                            <div class="window-content__info">Нажимая на эту кнопку я соглашаюсь на обработку персональных данных</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <a href="tel:79268434319" class="phone">+7(926) 843-43-19</a>
+            </div>
+            <div class="info-header__cart">
+              <button type="button" class="info-header__open" id="popup-cart-open"></button>
+              <div id="popup-cart">
+                <div id="popup-window">
+                    <div class="popup-content">
+                        <div class="popup-content__header">
+                          <h3 class="popup-content__title">Корзина</h3>
+                          <button type="button" id="popup-close"></button>
+                        </div>
+                        <div class="popup-content__body">
+                          <div class="popup-content__item">
+                            <div class="popup-content__img">
+                              <img src="img/popup-cart/popup-item.png" alt="dessert">
+                            </div>
+                            <div class="popup-content__info">
+                              <h4 class="popup-content__subtitle">Малиновый пирог, 1.2-1.4кг.</h4>
+                              <div class="popup-content__category">Ягодные</div>
+                              <div class="popup-content__price">1х2500 Rs..</div>
+                            </div>
+                            <button type="button" class="popup-content__delete"></button>
+                          </div>
+                        </div>
+                        <div class="popup-content__footer">
+                          <div class="popup-content__total">
+                            <div>Всего:</div>
+                            <div>3350 Rs..</div>
+                          </div>
+                          <button type="button" class="popup-content__ordering btn">Оформить заказ</button>
+                          <a href="cart.php" class="popup-content__cart">Просмотр корзины</a>
+                        </div>
+                    </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__error error">
+           <div class="error__container _container">
+            <div class="error__breadcumbs breadcumbs-block">
+               <ul class="breadcumbs-block__breadcumbs breadcumbs">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Корзина</a></li>
+                  <li><a href="#">Оформление заказа</a></li>
+                  <li><span href="#">Ошибка в оформлении заказа</span></li>
+               </ul>
+            </div>
+            <div class="error__body">
+               <h2 class="error__title">Ой,что-то пошло не так!</h2>
+               <div class="error__info">
+                  <p>Ваша оплата не прошла.Возможно,Вы неверно ввели данные карты.Пожалуйста,перепроверьте правильность введения данных и повторите попытку.</p>
+                  <a href="ordering.html" class="success-btn btn-ghost">Вернуться к оформлению заказа</a>
+               </div>
+            </div>
+           </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <div class="footer__body">
+            <div class="footer__info">
+              <a href="index.html" class="footer-logo"></a>
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <span>
+                    <img src="img/footer/footer-location.svg" alt="footer-geo" class="footer-list__icon">
+                    Москва,Россия
+                  </span>
+                </li>
+                <li class="footer-list__item">
+                 <a href="tel:79268434319">
+                   <img src="img/footer/footer-phone.svg" alt="footer-phone" class="footer-list__icon">
+                   +7(926) 843-43-19
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="mailto:maricake@gmail.com">
+                    <img src="img/footer/footer-email.svg" alt="footer-email" class="footer-list__icon">
+                    maricake@gmail.com
+                  </a>
+                </li>
+              </ul>
+              <div class="success__networks success-networks__footer">
+                <button type="button" class="success-networks__inst"></button>
+                <button type="button" class="success-networks__viber"></button>
+                <button type="button" class="success-networks__tg"></button>
+             </div>
+            </div>
+            <div class="footer__menu menu-footer">
+              <nav>
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a href="shop.php" class="menu-footer__link">Десерты</a>
+                    <ul class="mini-menu">
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Торты</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Пирожные</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Кексы</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Начинки</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Аккаунт</a>
+                    <ul class="mini-menu">
+                      <li class="mini-menu__link">
+                        <a href="#">Мой профиль</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="#">Избранное</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="cart.php">Корзина</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Контакты</a>
+                    <ul class="mini-menu">
+                      <li class="mini-menu__link">
+                        <a href="#">Instagram</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="#">Telegram</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="#">Whats App</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__scroll">            
+              <button type="button" id="top" class="scroll-up"></button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

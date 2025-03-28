@@ -1,0 +1,629 @@
+<div id='login-form'class='login-page'>
+  <div class="form-box">
+      <div class = "login">
+      <div class='button1-box'>
+          <div id='btn1'></div>
+          <button type='button1'onclick='login()' class='toggle1-btn1'>Log In</button>
+          <button type='button1'onclick='register()'class='toggle1-btn1'>Register</button>
+      </div>
+      <form id='login' class='input-group-login'>
+          <input type='text'class='input-field'placeholder='Email Id'  required >
+<input type='password'class='input-field'placeholder='Enter Password' required>
+<input type='checkbox'class='check-box'><span style="color:#777; font-size:12px; bottom:75px; position:absolute;">Remember Password</span>
+<button type='submit'class='submit-btn1'>Log in</button>
+</form>
+</div>
+<div class = "register">
+  <form action="https://formspree.io/f/mdorywdg" method="POST"  id='register' class='input-group-register'>
+<input type='name'class='input-field'placeholder='Full Name' name="name" required>
+<input type='email'class='input-field'placeholder='Email Id' name="email" required>
+<input type='password'class='input-field'placeholder='Enter Password'name="text" required>
+<input type='password'class='input-field'placeholder='Confirm Password' name="text" required>
+<input type='checkbox'class='check-box' name="checkbox"><span style="color:#777; font-size:12px; bottom:75px; position:absolute;">I agree to the terms and conditions</span>
+          <button type='submit'class='submit-btn1'>Register</button>
+ </form>
+</div>
+  </div>
+</div>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mari Cake</title>
+    <!--SEO-->
+    <meta name="description" content="Лучшие десерты в твоем городе">
+    <meta name="keywords" content="десерт, лучшие, панкейк">
+    <!-- OG Tags -->
+    <meta property="og:title" content="Mari Cake">
+    <meta property="og:description" content="Лучшие десерты в твоем городе">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="img/head/preview.png">
+    <meta property="og:site_name" content="Mari Cake">
+    <!-- Styling -->
+    <meta name="theme-color" content="#F2718E"> 
+    <link rel="apple-touch-icon" href="img/head/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/head/favicon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="myHeader">
+        <div class="header__container _container">
+          <div class="logo-block">
+            <div class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-gumb">
+              <nav>
+                <a href="./index.html" class="logo-gumb"></a>
+                  <ul class="menu">
+                      <li class="menu__item">
+                          <a href="./index.html" class="menu__link">Главная</a>
+                      </li>
+                      <li class="menu__item">
+                          <a href="./shop.php" class="menu__link">Десерты</a>
+                      </li>
+                      <li class="menu__item">
+                          <a href="./about.html" class="menu__link">О нас</a>
+                      </li>
+                      <li class="menu__item">
+                          <a href="./contacts.html" class="menu__link">Контакты</a>
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+            <a href="index.html" class="header__logo logo"></a>
+            <a href="index.html" class="mini-logo"></a>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="shop.php" class="menu__link">Десерты</a>
+              </li>
+              <li class="menu__item">
+                <a href="about.html" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__info info-header">
+            <div class="info-header__phone">
+              <div class="modal-content">
+                <button type="button" id="btn-open" class="order"></button>
+                <div id="wrapper-modal">
+                    <div id="modal-overlay">
+                    </div>
+                    <div id="modal-window">
+                            <button type="button" id="btn-close"></button>
+                        <div class="window-content">
+                            <h3 class="window-content__title">Заказать звонок</h3>
+                            <form action="#" class="form-popup">
+                              <input name="name" type="text" class="form-popup__input" placeholder="Имя" required>
+                              <input name="email" type="email" class="form-popup__input " placeholder="E-mail" required> 
+                              <input name="tel" type="tel" class="form-popup__input" placeholder="Телефон" required>
+                              <button type="submit" class="form-popup__button btn">Заказать</button>
+                            </form>
+                            <div class="window-content__info">Нажимая на эту кнопку я соглашаюсь на обработку персональных данных</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <a href="tel:79268434319" class="phone">+7(926) 843-43-19</a>
+            </div>
+            <div class="info-header__cart">
+              <button type="button" class="info-header__open" id="popup-cart-open"></button>
+              <div id="popup-cart">
+                <div id="popup-window">
+                    <div class="popup-content">
+                        <div class="popup-content__header">
+                          <h3 class="popup-content__title">Корзина</h3>
+                          <button type="button" id="popup-close"></button>
+                        </div>
+                        <div class="popup-content__body">
+                          <div class="popup-content__item">
+                            <div class="popup-content__img">
+                              <img src="img/popup-cart/popup-item.png" alt="dessert">
+                            </div>
+                            <div class="popup-content__info">
+                              <h4 class="popup-content__subtitle">Малиновый пирог, 1.2-1.4кг.</h4>
+                              <div class="popup-content__category">Ягодные</div>
+                              <div class="popup-content__price">1х2500 руб.</div>
+                            </div>
+                            <button type="button" class="popup-content__delete"></button>
+                          </div>
+                        </div>
+                        <div class="popup-content__footer">
+                          <div class="popup-content__total">
+                            <div>Всего:</div>
+                            <div>3350 руб.</div>
+                          </div>
+                          <button type="button" class="popup-content__ordering btn">Оформить заказ</button>
+                          <a href="cart.php" class="popup-content__cart">Просмотр корзины</a>
+                        </div>
+                    </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__main-block main-block">
+          <div class="main-block__container _container">
+            <div class="main-block__body">
+              <h1 class="main-block__title">Авторские десерты на заказ</h1>
+              <div class="main-block__text">Вкусное украшение вашего праздника по выгодной цене</div>
+              <button type="button" class="main-block__button btn" id="btn-open2">Заказать звонок</button>
+            </div>
+            <div class="main-block__image">
+              <img src="img/main-page/main-block/main-photo.png" alt="">
+            </div>
+          </div>
+        </div>
+        <section class="page__desserts desserts">
+          <div class="desserts__container _container">
+            <div class="desserts__head">
+              <div class="menu-btn-dessert">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-gumb-dessert">
+                <nav>
+                    <ul class="menu-dessert">
+                        <li class="menu__item-dessert">
+                            <a href="./index.html" class="menu__link">Все</a>
+                        </li>
+                        <li class="menu__item-dessert">
+                            <a href="./shop.php" class="menu__link">Чизкейки</a>
+                        </li>
+                        <li class="menu__item-dessert">
+                            <a href="./about.html" class="menu__link">Кексы</a>
+                        </li>
+                        <li class="menu__item-dessert">
+                            <a href="./contacts.html" class="menu__link">Ягодные</a>
+                        </li>
+                        <li class="menu__item-dessert">
+                          <a href="./contacts.html" class="menu__link">Пончики</a>
+                        </li>
+                        <li class="menu__item-dessert">
+                          <a href="./contacts.html" class="menu__link">Макаруны</a>
+                        </li>
+                    </ul>
+                </nav>
+              </div>
+              <h2 class="desserts__title">Десерты</h2>
+              <nav class="desserts__menu menu">
+                <ul class="menu__list menu__list-desserts">
+                  <li class="menu__item menu__item-desserts">
+                    <a href="" class="menu__link menu__link-desserts">Все</a>
+                  </li>
+                  <li class="menu__item menu__item-desserts">
+                    <a href="" class="menu__link menu__link-desserts">Авторские торты</a>
+                  </li>
+                  <li class="menu__item menu__item-desserts">
+                    <a href="" class="menu__link menu__link-desserts">Чизкейки</a>
+                  </li>
+                  <li class="menu__item menu__item-desserts">
+                    <a href="" class="menu__link menu__link-desserts">Кексы</a>
+                  </li>
+                  <li class="menu__item menu__item-desserts">
+                    <a href="" class="menu__link menu__link-desserts">Ягодные</a>
+                  </li>
+                  <li class="menu__item menu__item-desserts">
+                    <a href="" class="menu__link menu__link-desserts">Пончики</a>
+                  </li>
+                  <li class="menu__item menu__item-desserts">
+                    <a href="" class="menu__link menu__link-desserts">Макаруны</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="desserts__body">
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Ягодный</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1600 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item2.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Карамельный</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1400 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item3.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Чизкейк</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1500 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item4.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Бисквит</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1700 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item5.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Черничный пирог</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1900 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item6.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Орео</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1100 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item7.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Шоколад</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1200 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desserts__column">
+                <div class="desserts__item item-desserts">
+                  <div class="item-desserts__image desserts-image">
+                    <a href="./item.html" class="desserts-image__item">
+                      <img src="img/main-page/deserts/item8.png" alt="dessert">
+                    </a>
+                    <button type="button" class="desserts-image__favorite"></button>
+                  </div>
+                  <div class="item-desserts__info desserts-info">
+                    <div class="desserts-info__title">Макарун</div>
+                    <div class="desserts-info__weight">Вес от 1,2 кг</div>
+                    <div class="desserts-info__price info-price">
+                      <span class="info-price__coin">1300 руб/кг</span>
+                      <a href="./cart.php" class="info-price__cart">
+                        <span>В корзину</span>
+                        <img src="img/main-page/deserts/basket.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__team team">
+          <div class="team__container _container">
+            <h2 class="team__title">Посмотрите, какая у нас команда</h2>
+            <div class="team__body body-team">
+              <div class="body-team__column">
+                <div class="body-team__people people-team">
+                  <img src="img/main-page/team/woman.png" alt="woman">
+                  <div class="people-team__info">
+                    <div class="people-team__name">
+                      Ольга Одякова
+                    </div>
+                    <div class="people-team__work">
+                      Директор
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-team__column">
+                <div class="body-team__people people-team">
+                  <img src="img/main-page/team/woman2.png" alt="woman">
+                  <div class="people-team__info">
+                    <div class="people-team__name">
+                      Антонина Лебедева
+                    </div>
+                    <div class="people-team__work">
+                      Бренд-шеф
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-team__column">
+                <div class="body-team__people people-team">
+                  <img src="img/main-page/team/man.png" alt="man">
+                  <div class="people-team__info">
+                    <div class="people-team__name">
+                      Даниил Андреев
+                    </div>
+                    <div class="people-team__work">
+                      Младший кондитер
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-team__column">
+                <div class="body-team__people people-team">
+                  <img src="img/main-page/team/man2.png" alt="man">
+                  <div class="people-team__info">
+                    <div class="people-team__name">
+                      Кирилл Пирогов
+                    </div>
+                    <div class="people-team__work">
+                      Бариста
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-team__column">
+                <div class="body-team__people people-team">
+                  <img src="img/main-page/team/dog.png" alt="dog">
+                  <div class="people-team__info">
+                    <div class="people-team__name">
+                      Мартин
+                    </div>
+                    <div class="people-team__work">
+                      Главный по обнимашкам
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__questions">
+          <div class="questions__container _container">
+            <h2 class="questions__title">Часто задаваемые вопросы</h2>
+            <div class="questions__body">
+              <div class="accordion-wrapper">
+                <div class="accordion-item">
+                  <div class="accordion-item__title">Что является основой ваших десертов? </div>
+                  <div class="accordion-item__content">В основе любого моего десерта два главных ингредиента, например, шоколад и орехи, маракуйя и кокос, кофе и орехи. Остальные компоненты — лишь небольшие вкусовые вкрапления. Они, как приправа, призваны подчеркнуть вкус основного блюда. Поэтому для меня так важно работать с сезонными продуктами.</div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__title">Что самое трудное и самое приятное в работе кондитера?</div>
+                  <div class="accordion-item__content">Не терять вдохновения, продолжать искать и создавать оригинальные рецепты, которых никто и никогда ранее не знал. Для этого нужно быть требовательным к себе и очень терпеливым, ведь в нашей работе много ручного труда. Я всегда спрашиваю своих гостей, что им понравилось, а что нет. Обмен опытом с моей командой и общение с моими клиентами — это то, что вдохновляет!</div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__title">Важнее вкус или презентация десерта?</div>
+                  <div class="accordion-item__content">Для  нас значение имеет только вкус.Наш вренд-шеф проводит до двенадцати дегустаций одного десерта, прежде чем добиваюсь идеального баланса вкуса и сочетания текстур. Но миром правит Instagram, и гости сначала делают фото блюда, а лишь потом его пробуют.Сначала мы едим глазами.Нам важно, чтобы внешний вид отражал содержание. Но вкус остается на первом месте.</div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__title">Какие красители вы используете?</div>
+                  <div class="accordion-item__content">Мы используем только натуральные десерты,сделанные из ягод, фруктов и овощей (свекла, морковь, клюква, облепиха, шпинат и пр.). Процесс их получения достаточно трудоемкий, ну а цена, соответственно, гораздо выше искусственных.Мы производим их в своей кондитерской,поэтому с уверенностью можем сказать,что в наших красителях нет ускуственных добавок.</div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__title">Как и во что будет упакован торт?</div>
+                  <div class="accordion-item__content">
+                    Мы упаковываем торты в коробки из плотного картона или пластика.Цвет упаковки вы сможете выбрать сами,либо довериться нашему вкусу.Самое важное качество коробок – их крепость и устойчивость, ведь именно коробкам приходится сглаживать все шероховатости доставки.
+                    Сам торт обычно ставится на уплотнённую подложку,которая прочно держит торт и не даёт ему упасть.</div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__title">Можно ли сделать личный заказ по вашим пожеланиям?</div>
+                  <div class="accordion-item__content">Конечно!Мы всегда поддержим Ваши идеи и задумки.Если нет идей, обсудите возможность разработки дизайна, описав стилистику торжества, а также озвучив бюджет.
+                    Наша основная цель-сделать всё  возможное,что наши клиенты были счастливы и довольны.Мы стремимся исполнить все ваши желания ,чтоб любой ваш праздник прошёл на высшем уровне.                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__about-us about-us">
+          <div class="about-us__container _container">
+            <h2 class="about-us__title">Связаться с нами</h2>
+            <div class="about-us__body about-we">
+              <form action="#" class="about-we__form about-form">
+                <input name="name" type="text" class="about-form__input" placeholder="Имя" required>
+                <input name="tel" type="tel" class="about-form__input" placeholder="Телефон" required>
+                <button type="submit" class="about-form__button btn">Заказать звонок</button>
+              </form>
+            </div>
+            
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <div class="footer__body">
+            <div class="footer__info">
+              <a href="index.html" class="footer-logo"></a>
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <span>
+                    <img src="img/footer/footer-location.svg" alt="footer-geo" class="footer-list__icon">
+                    Москва,Россия
+                  </span>
+                </li>
+                <li class="footer-list__item">
+                 <a href="tel:79268434319">
+                   <img src="img/footer/footer-phone.svg" alt="footer-phone" class="footer-list__icon">
+                   +7(926) 843-43-19
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="mailto:maricake@gmail.com">
+                    <img src="img/footer/footer-email.svg" alt="footer-email" class="footer-list__icon">
+                    maricake@gmail.com
+                  </a>
+                </li>
+              </ul>
+              <div class="success__networks success-networks__footer">
+                <button type="button" class="success-networks__inst"></button>
+                <button type="button" class="success-networks__viber"></button>
+                <button type="button" class="success-networks__tg"></button>
+             </div>
+            </div>
+            <div class="footer__menu menu-footer">
+              <nav>
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a href="shop.php" class="menu-footer__link">Десерты</a>
+                    <ul class="mini-menu">
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Торты</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Пирожные</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Кексы</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="shop.php">Начинки</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Аккаунт</a>
+                    <ul class="mini-menu">
+                      <li class="mini-menu__link">
+                        <a href="#">Мой профиль</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="#">Избранное</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="cart.php">Корзина</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Контакты</a>
+                    <ul class="mini-menu">
+                      <li class="mini-menu__link">
+                        <a href="#">Instagram</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="#">Telegram</a>
+                      </li>
+                      <li class="mini-menu__link">
+                        <a href="#">Whats App</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__scroll">            
+              <button type="button" id="top" class="scroll-up"></button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
